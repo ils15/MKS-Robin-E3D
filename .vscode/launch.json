@@ -14,7 +14,7 @@
             "name": "PIO Debug",
             "executable": "d:/OneDrive/Impressora 3D/GIT/MKS-Robin-E3D/.pio/build/mks_robin_e3/firmware.elf",
             "toolchainBinDir": "C:/Users/Igor/.platformio/packages/toolchain-gccarmnoneeabi/bin",
-            "svdPath": "C:/Users/Igor/.platformio/platforms/ststm32@6.1.1/misc/svd/STM32F103xx.svd",
+            "svdPath": "C:/Users/Igor/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd",
             "preLaunchTask": {
                 "type": "PlatformIO",
                 "task": "Pre-Debug"
@@ -27,7 +27,7 @@
             "name": "PIO Debug (skip Pre-Debug)",
             "executable": "d:/OneDrive/Impressora 3D/GIT/MKS-Robin-E3D/.pio/build/mks_robin_e3/firmware.elf",
             "toolchainBinDir": "C:/Users/Igor/.platformio/packages/toolchain-gccarmnoneeabi/bin",
-            "svdPath": "C:/Users/Igor/.platformio/platforms/ststm32@6.1.1/misc/svd/STM32F103xx.svd",
+            "svdPath": "C:/Users/Igor/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd",
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]

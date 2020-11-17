@@ -26,9 +26,6 @@
                 "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/usb/stm32f1",
                 "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/usb/usb_lib",
                 "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103r",
-                "C:/Users/Igor/.platformio/lib/Ethernet/src",
-                "C:/Users/Igor/.platformio/lib/WebSockets/src",
-                "C:/Users/Igor/.platformio/lib/WifiManager",
                 "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/A_STM32_Examples",
                 "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_GFX_AS",
                 "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_ILI9341",
@@ -80,9 +77,6 @@
                     "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/usb/stm32f1",
                     "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/usb/usb_lib",
                     "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103r",
-                    "C:/Users/Igor/.platformio/lib/Ethernet/src",
-                    "C:/Users/Igor/.platformio/lib/WebSockets/src",
-                    "C:/Users/Igor/.platformio/lib/WifiManager",
                     "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/A_STM32_Examples",
                     "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_GFX_AS",
                     "C:/Users/Igor/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_ILI9341",
@@ -113,7 +107,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=50001",
+                "PLATFORMIO=50002",
                 "STM32F103xE",
                 "STM32F1",
                 "TARGET_STM32F1",
