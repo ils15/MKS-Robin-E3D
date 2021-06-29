@@ -1,0 +1,40 @@
+# This a Github Action for automatically building Marlin Firmware when you push a commit to master.
+# Example mentioned in issue #11 for multiple configurations, simply create sub-folders with name of choice.
+
+name: Build Marlin Firmware
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Firmware/Configuration/Ender_3_v1.0/**.h'
+
+jobs:
+  build_and_push:
+    name: Build and push firmware
+    runs-on: ubuntu-latest
+    env:
+      BOARD: mks_robin_e3
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+
+      - name: Compile firmware
+        run: |
+          docker run \
+            -u root:root \
+            -e BOARD \
+            -e USE_TAG=2.0.9.1 \
+            -v $(pwd)/Firmware/Builds/Ender_3_v1.0:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration/Ender_3_v1.0:/home/platformio/CustomConfiguration \
+            frealmyr/marlin-build:latest
+
+      - name: Push firmware
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Compiled firmware"
+          git push
