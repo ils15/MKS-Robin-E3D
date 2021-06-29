@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - 'Firmware/Configuration/Ender_3_v1.0/**.h'
+      - 'Firmware/Configuration/Ender_3_v1/**.h'
 
 jobs:
   build_and_push:
@@ -27,8 +27,8 @@ jobs:
             -u root:root \
             -e BOARD \
             -e USE_TAG=2.0.9.1 \
-            -v $(pwd)/Firmware/Builds/Ender_3_v1.0:/home/platformio/build \
-            -v $(pwd)/Firmware/Configuration/Ender_3_v1.0:/home/platformio/CustomConfiguration \
+            -v $(pwd)/Firmware/Builds/Ender_3_v1:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration/Ender_3_v1:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
 
       - name: Push firmware
